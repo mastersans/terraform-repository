@@ -7,6 +7,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+    bucket = "sanskar-terraform-statebackend"
+    key    = "terraform-repository/terraform.tfstate"
+    region = "us-west-1"
+  }
 }
 
 provider "aws" {
