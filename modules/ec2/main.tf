@@ -1,5 +1,5 @@
 locals {
-  name = "${var.project_name}-${var.environment}"
+  name = "${var.project_name}-${var.environment}${var.name_suffix}"
 }
 
 resource "aws_instance" "main" {

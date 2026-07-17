@@ -1,6 +1,9 @@
 # Local .terraform directories
 .terraform/
 
+# Generated lambda build artifacts
+modules/lambda/build/
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
